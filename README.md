@@ -4,10 +4,14 @@
 https://go.screenpal.com/watch/cZ1ejCVN6Q2
 After 1st update
 https://youtu.be/vYiTSB6pXkg
-# About
-It is a chat analyzer which gives the whole summary of that chats of a group of people. It shows the results
-using graphs, word cloud, etc. It can be used during any kind of investigation to check whether there is any suspicious
-activity going on in the group chat such as police can use this as a tool in their investigation which will make their
-work easier and faster. It can also be treated as an entertainment tool which can be used by individuals for fun.
-#Tech Stack
-Python , Numpy, Pandas, Machine learning algorithms, Google colaboratory,EDA.
+#About CScan🔍
+Welcome to the CScan. This tool allows you to analyze WhatsApp chats for various metrics like total messages, most active users,word cloud, activity maps and many more.
+
+In addition, we have a Narcotics & CBI Section where the tool can search for suspicious words related to narcotics, drugs, cybercrime, and threats. The system also identifies the potential culprit who uses these sensitive words the most.
+
+Features of this tool:
+
+View WhatsApp chat statistics
+Detect messages related to narcotics, drugs, cybercrime, and threats
+View flagged messages after clicking on the sensitive information button to prevent flashing harsh words to the users.
+Identify the potential culprit in the chat
