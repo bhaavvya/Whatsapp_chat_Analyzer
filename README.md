@@ -1,7 +1,9 @@
 # Whatsapp_chat_Analyzer
 # Demo Video of demonstration of my project <br>
+1st version of the tool
 https://go.screenpal.com/watch/cZ1ejCVN6Q2
-
+After 1st update
+https://youtu.be/vYiTSB6pXkg
 # About
 It is a chat analyzer which gives the whole summary of that chats of a group of people. It shows the results
 using graphs, word cloud, etc. It can be used during any kind of investigation to check whether there is any suspicious
