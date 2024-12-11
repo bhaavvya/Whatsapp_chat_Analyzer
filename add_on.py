@@ -3,7 +3,25 @@ from wordcloud import WordCloud
 import pandas as pd
 from collections import Counter
 import emoji
+import re
 extractor = URLExtract()
+
+def remove_emojis(text):
+    """Remove emojis from the input text."""
+    emoji_pattern = re.compile(
+        "["
+        u"\U0001F600-\U0001F64F"  # Emoticons
+        u"\U0001F300-\U0001F5FF"  # Symbols & Pictographs
+        u"\U0001F680-\U0001F6FF"  # Transport & Map Symbols
+        u"\U0001F1E0-\U0001F1FF"  # Flags (iOS)
+        u"\U00002702-\U000027B0"  # Dingbats
+        u"\U000024C2-\U0001F251"  # Enclosed characters
+        u"\U0001F900-\U0001F9FF"  # Supplemental symbols and Pictographs
+        u"\U0001F200-\U0001F2FF"  # Supplemental symbols and Pictographs
+        "]+", 
+        re.UNICODE
+    )
+    return emoji_pattern.sub(r'', text)  # Replace emojis with an empty string
 
 def fetch_stats(user_selects,df):
     if user_selects != 'Overall':
@@ -65,6 +83,7 @@ def most_common_words(user_selects,df):
     words = []
 
     for message in temp['message']:
+        message = remove_emojis(message)
         for word in message.lower().split():
             if word not in stop_words:
                 words.append(word)
