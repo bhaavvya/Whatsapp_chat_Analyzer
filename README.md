@@ -1,4 +1,4 @@
-# Whatsapp_chat_Analyzer
+# CScan
 # Demo Video of demonstration of my project <br>
 1st version of the tool
 https://go.screenpal.com/watch/cZ1ejCVN6Q2
